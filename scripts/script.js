@@ -37,14 +37,13 @@ function hideDisplay() {
   ).style.display = "hidden";
 }
 
-//essa função coleta o texto inserido pelo usuário através da textarea <---- colocar um if else, se tiver uma palavra no campo que coleta a informação continuar o processo de
-//funções normalmente, senão interroper e mostrar um aviso de campo vazio
+//essa função coleta o texto inserido pelo usuário através da textarea
 function collectData() {
   let dataInput = document.getElementById("dataInput").value;
   return dataInput;
 }
 
-//função que transforma o texto coletado em minusculo além de substituir acentos para palavras sem acentos
+//função que transforma o texto coletado em minusculo além de substituir acentos por palavras sem acentos
 function lowerCaseNormalize() {
   let normalData = collectData()
     .normalize("NFD")
@@ -55,22 +54,22 @@ function lowerCaseNormalize() {
 //função que criptografa(apenas troca as vogais por palavras) e retorna o texto "criptografado"
 function encryptedData() {
   let trocarVogais = lowerCaseNormalize()
-    .replace("e", "enter")
-    .replace("i", "imes")
-    .replace("a", "ai")
-    .replace("o", "ober")
-    .replace("u", "ufat");
+    .replaceAll("e", "enter")
+    .replaceAll("i", "imes")
+    .replaceAll("a", "ai")
+    .replaceAll("o", "ober")
+    .replaceAll("u", "ufat");
   return trocarVogais;
 }
 
 //função que descriptografa(troca as palavras por vogais) e retorna o texto "descriptografado"
 function decryptedData() {
   let trocarPalavrasPorVogais = lowerCaseNormalize()
-    .replace("enter", "e")
-    .replace("imes", "i")
-    .replace("ai", "a")
-    .replace("ober", "o")
-    .replace("ufat", "u");
+    .replaceAll("enter", "e")
+    .replaceAll("imes", "i")
+    .replaceAll("ai", "a")
+    .replaceAll("ober", "o")
+    .replaceAll("ufat", "u");
   return trocarPalavrasPorVogais;
 }
 
