@@ -293,9 +293,13 @@ body {
   }
 
   .conteudo_principal {
-    width: 430px;
+    width: 100vw;
     height: auto;
     margin: 0;
+  }
+
+  .conjunto_texto_botao {
+    width: 100vw;
   }
 
   .conjunto_texto_botao img {
@@ -309,8 +313,8 @@ body {
 
   .botao_conjunto {
     flex-direction: column;
-    width: 26.87rem;
-    padding: 1rem;
+    width: 95vw;
+    margin-left: 5px;
   }
 
   .botao_estilo_um,
@@ -324,7 +328,14 @@ body {
     margin-bottom: 3rem;
   }
 
+  .conteudo_lateral_jsalt {
+    justify-content: center;
+    margin: 0.5rem;
+    height: auto;
+  }
+
   .botao_estilo_copiar {
-    width: 20rem;
+    width: 97%;
+    bottom: 0;
   }
 }
