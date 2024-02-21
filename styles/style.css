@@ -314,7 +314,7 @@ body {
   .botao_conjunto {
     flex-direction: column;
     width: 95vw;
-    margin-left: 5px;
+    margin-left: 2.5%;
   }
 
   .botao_estilo_um,
@@ -337,5 +337,9 @@ body {
   .botao_estilo_copiar {
     width: 97%;
     bottom: 0;
+  }
+
+  .rodape {
+    text-align: center;
   }
 }
