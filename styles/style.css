@@ -242,8 +242,9 @@ body {
 
   .conteudo_principal {
     display: block;
-    margin: 2rem;
+    margin: auto;
     width: 100%;
+    height: auto;
   }
 
   .textoarea {
@@ -262,7 +263,7 @@ body {
 
   .conteudo_lateral_jsalt {
     width: auto;
-    height: 21.43rem;
+    height: auto;
     padding: 1.25rem;
     margin: 2.5rem;
     background-color: #ffffff;
@@ -276,6 +277,7 @@ body {
     position: relative;
     align-self: center;
     margin: 0;
+    bottom: 0;
   }
 
   .imagem_menino_lupa {
