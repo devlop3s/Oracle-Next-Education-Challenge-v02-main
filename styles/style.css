@@ -223,14 +223,14 @@ body {
   .conteudo_principal {
     margin: 2rem;
   }
-}
 
-.conteudo_lateral {
-  height: auto;
-}
+  .conteudo_lateral {
+    height: auto;
+  }
 
-.conteudo_lateral_jsalt {
-  height: auto;
+  .conteudo_lateral_jsalt {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
