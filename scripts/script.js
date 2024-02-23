@@ -111,5 +111,6 @@ function botaoCopy() {
     ).innerText;
     navigator.clipboard.writeText(textoCopiado);
     botaoDeCopiar.style.display = "flex";
+    botaoDeCopiar.textContent = "Copiado!";
   });
 }
