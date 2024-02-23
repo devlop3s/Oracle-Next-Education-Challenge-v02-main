@@ -225,6 +225,14 @@ body {
   }
 }
 
+.conteudo_lateral {
+  height: auto;
+}
+
+.conteudo_lateral_jsalt {
+  height: auto;
+}
+
 @media screen and (max-width: 768px) {
   main {
     display: flex;
