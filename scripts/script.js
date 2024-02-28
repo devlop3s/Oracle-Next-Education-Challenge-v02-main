@@ -14,7 +14,7 @@ function botaoEncrypt() {
   }
 }
 
-//função de "gatilho" de todas as outras fumções para criptografia da mensagem
+//função de "gatilho" de todas as outras funções para criptografia da mensagem
 function botaoDecrypt() {
   if (collectData() == "") {
     alert("O campo de texto está vazio, insira alguma informação");
